@@ -1,0 +1,107 @@
+h1 {
+    font:21px sans-serif;
+    }
+
+div.rule-section {
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 6px;
+    margin-bottom: 8px;
+    width:fit-content;
+    min-width: 100%;
+    }
+
+div.cross-reference {
+    border-radius: 5px;
+    background: rgba(0,0,0,0.05);
+    padding: 6px;
+    margin:4px;
+    }
+
+a.cross-reference {
+    font: italic 14px sans-serif;
+    }
+
+p.cross-reference {
+    font: 14px sans-serif;
+    }
+
+svg.rrd line {
+        stroke-width:${PATH_WIDTH};
+        stroke:black;
+        fill:rgba(0,0,0,0);
+        }
+
+svg.rrd path {
+        stroke-width:${PATH_WIDTH};
+        stroke:black;
+        fill:rgba(0,0,0,0);
+        }
+
+svg.rrd path.symbol {
+        stroke-width:1;
+        stroke:black;
+        fill:black;
+        }
+
+svg.rrd circle.rule-start{
+    stroke-width:${PATH_WIDTH};
+    stroke:black;
+    fill:rgb(246, 200, 200);
+    }
+
+ svg.rrd rect.rule-start{
+        stroke-width:${PATH_WIDTH};
+        stroke:black;
+        fill:rgb(246, 200, 200);
+    }
+
+svg.rrd text.rule-start {
+        font:italic ${RULE_START_CHAR_SIZE}px monospace;
+        text-anchor:middle;
+        }
+
+svg.rrd path.rule-end {
+        stroke-width:${PATH_WIDTH};
+        stroke:black;
+        fill:rgba(0,0,0,0);
+        }
+
+svg.rrd rect.lexer {
+        stroke-width:${PATH_WIDTH};
+        stroke:black;
+        fill:rgb(246, 255, 204);
+        }
+
+svg.rrd text.lexer {
+        font:italic ${RULE_CHAR_SIZE}px monospace;
+        text-anchor:middle;
+        }
+
+svg.rrd rect.lexer-literal {
+        stroke-width:${PATH_WIDTH};
+        stroke:black;
+        fill:rgb(246, 255, 204);
+        }
+
+svg.rrd circle.lexer-literal {
+    stroke-width:${PATH_WIDTH};
+    stroke:black;
+    fill:rgb(246, 255, 204);
+    }
+
+svg.rrd text.lexer-literal {
+    font:bold ${LITERAL_CHAR_SIZE}px monospace;
+    text-anchor:middle;
+    }
+
+svg.rrd rect.parser {
+        stroke-width:${PATH_WIDTH};
+        stroke:black;
+        fill:hsl(120,100%,90%);
+        }
+
+svg.rrd text.parser {
+        font:italic ${RULE_CHAR_SIZE}px monospace;
+        text-anchor:middle;
+        }
